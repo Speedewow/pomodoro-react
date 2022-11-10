@@ -1,0 +1,90 @@
+.header {
+  height: 6%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: rgb(204, 79, 51);
+  color: white;
+  transition: 1s;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.header-hidden {
+  visibility: hidden;
+  transform: translateY(-150%);
+}
+
+.header-colored {
+  background-color: white;
+  color: rgb(204, 79, 51);
+}
+
+.logo-container {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo-title {
+  margin: 0;
+  padding: 4px 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.logo {
+  width: 25px;
+  transition: 1s;
+}
+
+.logo:hover {
+  width: 30px;
+}
+
+.info-icon {
+  display: block;
+  width: 21px;
+  height: 21px;
+  color: white;
+  cursor: pointer;
+  transition: 1s;
+  background-image: url(../content/info.svg);
+}
+
+.theme-icon {
+  display: block;
+  width: 21px;
+  height: 21px;
+  color: white;
+  cursor: pointer;
+  transition: 1s;
+  background-image: url(../content/color.svg);
+}
+
+.info-icon-red {
+  display: block;
+  width: 21px;
+  height: 21px;
+  color: white;
+  cursor: pointer;
+  transition: 1s;
+  background-image: url(../content/info_red.svg);
+}
+
+.theme-icon-red {
+  display: block;
+  width: 21px;
+  height: 21px;
+  color: white;
+  cursor: pointer;
+  transition: 1s;
+  background-image: url(../content/color_red.svg);
+}

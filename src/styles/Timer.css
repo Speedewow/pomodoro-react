@@ -1,0 +1,106 @@
+.title {
+  margin: 0 auto;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.time {
+  margin: 0;
+  padding: 0;
+}
+
+.timer-container {
+  max-height: 54%;
+  height: 100%;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.timer {
+  background-color: rgb(204, 79, 51);
+  color: #fff;
+  border-radius: 15px;
+  font-size: 70px;
+  padding: 5px 25px;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  transition: 1s;
+  z-index: 2;
+}
+
+.timer-colored {
+  background-color: white;
+  color: rgb(204, 79, 51);
+}
+
+.pause {
+  margin: 0 auto;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.pause-visible {
+  opacity: 0.7;
+  visibility: visible;
+  pointer-events: fill;
+}
+
+.pause:hover {
+  opacity: 1;
+}
+
+.pause-active {
+  opacity: 1;
+}
+
+.button-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  height: 22%;
+}
+
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 95px;
+  border: none;
+  border-radius: 3px;
+  height: 37px;
+  line-height: 37px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(204, 79, 51);
+  outline: rgb(204, 79, 51);
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  touch-action: manipulation;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.button:hover {
+  outline: 1px solid white;
+  width: 110px;
+  height: 45px;
+}
+
+.button-disable {
+  background-color: white;
+  color: rgb(204, 79, 51);
+  pointer-events: none;
+  opacity: 0.8;
+}

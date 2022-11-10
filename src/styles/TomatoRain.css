@@ -1,0 +1,40 @@
+.tomatos {
+  position: fixed;
+  max-width: 412px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.tomatos-start {
+  --animation-name: tomatoRain;
+}
+
+.tomato {
+  position: relative;
+  top: -2.5em;
+  animation-name: var(--animation-name);
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+.tomato-image {
+  background: no-repeat center/cover;
+  width: 100%;
+}
+
+@keyframes tomatoRain {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(100vh + 1.5em));
+  }
+}

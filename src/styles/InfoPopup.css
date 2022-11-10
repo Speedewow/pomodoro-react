@@ -1,0 +1,28 @@
+.popup {
+  left: 40px;
+  top: 10px;
+  min-width: 35%;
+  max-width: 50%;
+  text-align: justify;
+  color: black;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 7px;
+  margin: 0px;
+  background-color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+  z-index: 2;
+}
+
+.popup-open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-text {
+  margin: 0;
+  font-size: 12px;
+}
