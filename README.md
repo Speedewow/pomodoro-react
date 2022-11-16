@@ -25,4 +25,4 @@
 
 ### Ссылка на GHpages:
 
-https://speedewow.github.io/pomodoro/
+https://speedewow.github.io/pomodoro-react/
